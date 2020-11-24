@@ -1,0 +1,90 @@
+.section-sidebar {
+  background-color: $background-color-dark;
+  color: $color-light;
+  height: 100vh;
+  width: 230px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar-header {
+  margin: 0 auto;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+
+  .logo {
+    flex: 0 0 75%;
+    padding: 8px;
+
+    .logo-text{
+      font-family: $font-logo;
+      font-size: $header-font-size;
+      font-weight: $font-bold;
+      margin: 5px auto;
+      padding-left: 10px;
+    }
+  }
+
+  .sidebar-menu {
+    flex: 0 0 25%;
+    height: 100%;
+    text-align: center;
+
+    i {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    &:hover {
+      background: $hover-color-dark;
+      color: lighten($color-light, 20%);
+    }
+  }
+}
+
+.sidebar-people {
+  border-top: 1px solid $color-light;
+}
+
+.sidebar-person {
+  padding: 10px 15px;
+}
+
+.sidebar-person-info {
+  padding: 10px;
+
+  &:hover {
+    background: $hover-color-dark;
+    color: lighten($color-light, 20%);
+  }
+}
+
+.sidebar-person-details{
+  display: flex;
+  position: relative;
+
+  img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+
+  .sidebar-avilable {
+    position: absolute;
+    left: 35px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: $color-success;
+  }
+
+  a {
+    span {
+      margin-left: 10px;
+      line-height: 3;
+    }
+  }
+}
+

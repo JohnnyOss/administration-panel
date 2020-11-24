@@ -1,0 +1,421 @@
+/* Colors */
+/* Font sizes & weight*/
+/* Fonts */
+/* Other */
+.btn {
+  background-color: #ffa801;
+  color: #dff9fb;
+  border-color: #dff9fb;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 1s;
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-cancel {
+  background: #222f3e;
+}
+
+.btn-cancel:hover {
+  background: black;
+}
+
+.btn-success {
+  background: #22923a;
+}
+
+.btn-success:hover {
+  background: #0f3f19;
+}
+
+.btn-warning {
+  background: #da0404;
+}
+
+.btn-warning:hover {
+  background: #760202;
+}
+
+.btn-add {
+  background: #ffa801;
+  margin: 20px auto;
+}
+
+.btn-add:hover {
+  background: #9a6500;
+}
+
+.table {
+  padding: 0 20px;
+}
+
+.table-list {
+  background: #f1f2f6;
+  list-style-type: none;
+  display: flex;
+  margin: 1px auto;
+  padding: 5px 15px;
+  border-bottom: 1px solid #222f3e;
+}
+
+.table-list:hover {
+  background: #c7ecee;
+  cursor: pointer;
+}
+
+.table-link {
+  text-align: left;
+}
+
+.table-link h3 {
+  width: 45%;
+}
+
+.table-link a {
+  width: 33%;
+  text-decoration: none;
+  color: #575fcf;
+  margin: auto 10px;
+}
+
+.table-link .link-icons {
+  margin: 15px 0;
+}
+
+.table-link img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.table-text p {
+  margin: auto;
+}
+
+.table-value {
+  justify-content: space-between;
+}
+
+.nav-list {
+  font-family: "Lato", sans-serif;
+  color: #dff9fb;
+  background-color: #1e272e;
+  width: 100%;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.nav-list .nav-bar {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.nav-list .nav-bar .nav-icon {
+  position: relative;
+  width: 40px;
+}
+
+.nav-list .nav-bar .nav-icon img {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin: 10px auto;
+}
+
+.nav-list .nav-bar:hover {
+  border-left: 5px solid #ffa801;
+  background: #485460;
+  color: white;
+}
+
+.nav-link {
+  min-width: 150px;
+}
+
+.nav-link a {
+  cursor: pointer;
+}
+
+.nav-link a p {
+  font-size: 16px;
+  color: #dff9fb;
+  margin: 5px auto;
+}
+
+input, select, textarea {
+  border: 1px solid #222f3e;
+  border-radius: 4px;
+  margin: 5px auto;
+  outline: none;
+}
+
+input:hover, select:hover, textarea:hover {
+  border: 2px solid #222f3e;
+  cursor: pointer;
+}
+
+input.error, select.error, textarea.error {
+  border-color: #da0404;
+}
+
+.input-image {
+  margin: 5px;
+  width: 100%;
+}
+
+.input-image img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.input-field {
+  padding: 10px;
+  text-align: center;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background: #f1f2f6;
+  border: 1px solid #222f3e;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #c7ecee;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #22923a;
+}
+
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.control-checkbox .control_indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #222f3e;
+}
+
+.control-checkbox .control_indicator::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: -1.3rem;
+  margin-top: -1.3rem;
+  background: #22923a;
+  border-radius: 3rem;
+  opacity: 0.6;
+  z-index: 99999;
+  transform: scale(0);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #575fcf;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Fonts */
+.guide-fonts {
+  margin-right: 24px;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.rock-salt {
+  font-family: "Rock Salt", cursive;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.header-size-big {
+  font-size: 28px;
+}
+
+.header-size-regular {
+  font-size: 24px;
+}
+
+.header-size-small {
+  font-size: 20px;
+}
+
+.text-size {
+  font-size: 16px;
+}
+
+.small-text-size {
+  font-size: 12px;
+}
+
+/* Colors */
+.guide-colors {
+  text-align: center;
+  margin-right: 24px;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.color-text {
+  margin: 20px auto;
+}
+
+.colors-main {
+  background-color: #ffa801;
+}
+
+.colors-font-light {
+  background-color: #dff9fb;
+}
+
+.colors-font-dark {
+  background-color: #222f3e;
+}
+
+.colors-background-light {
+  background-color: #f1f2f6;
+}
+
+.colors-background-dark {
+  background-color: #1e272e;
+}
+
+.colors-hover-light {
+  background-color: #c7ecee;
+}
+
+.colors-hover-dark {
+  background-color: #485460;
+}
+
+.colors-warning {
+  background-color: #da0404;
+}
+
+.colors-success {
+  background-color: #22923a;
+}
+
+.colors-links {
+  background-color: #575fcf;
+}
+
+/* Components */
+.buttons {
+  width: 230px;
+}
+
+.tables {
+  width: 400px;
+  margin-right: 24px;
+}
+
+.inputs {
+  width: 200px;
+  margin-right: 24px;
+}
+
+.checkboxes {
+  width: 400px;
+  display: block;
+}
+
+/*# sourceMappingURL=styleguide.css.map */

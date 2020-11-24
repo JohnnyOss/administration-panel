@@ -1,0 +1,107 @@
+.general-calendar {
+  position: relative;
+  padding: 30px;
+  border-bottom: 2px solid darken($background-color-light, 15%);
+
+  .calendar-input {
+    height: 60px;
+    display: inline-flex;
+    border: 1px solid $color-dark;
+
+    input {
+      border: none;
+      margin: 10px;
+      background-color: $background-color-light;
+    }
+
+    .input-line {
+      border-left: 1px solid $color-dark;
+      height: 48px;
+      margin-top: 5px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 20px 10px 0 10px;
+    }
+  }
+
+  .btn-refresh {
+    position: absolute;
+    top: 35px;
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      transition: all 0.3s;
+    }
+
+    &:hover img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.graph-header {
+  text-align: left;
+  padding: 5px 15px;
+  margin-top: 40px;
+}
+
+.general-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  ul {
+    min-width: 250px;
+    padding: 0;
+    width: 47%;
+  }
+}
+
+.graph-options {
+  margin: 30px auto 60px auto;
+
+  div {
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: $radius;
+    display: inline-flex;
+    flex: 0 0 33%;
+
+    span {
+      margin: 5px 10px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: rgb(102, 178, 201);
+    }
+
+    &:hover {
+      background-color: $hover-color-light;
+    }
+  }
+
+  .graph-span-active {
+    background-color: $hover-color-light;
+  }
+
+  .graph-ftd {
+    background-color: rgb(231, 131, 38);
+  }
+
+  .graph-earned {
+    background-color: rgb(29, 175, 53);
+  }
+}
+
+.general-content img {
+  margin-bottom: 40px;
+}
+

@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: darken($background-color-light, 15%);
+  font-family: $font-text;
+  font-size: $base-font-size;
+  line-height: 1.7;
+  font-weight: $font-normal;
+  color: $color-dark;
+}
+
+.container {
+  margin: 18px 18px 18px 248px;
+}
+
+.container-sized{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-links;
+}

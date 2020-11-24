@@ -1,5 +1,17 @@
 @import "variables";
 @import "mixins";
+@import "global";
 
 @import "normalize";
 @import "layout";
+
+@import "components/buttons";
+@import "components/checkboxes";
+@import "components/inputs";
+@import "components/tables";
+
+@import "sections/sidebar";
+@import "sections/header";
+@import "sections/content";
+
+@import "pages/general";

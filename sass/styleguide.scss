@@ -1,0 +1,156 @@
+@import "variables";
+@import "components/buttons";
+@import "components/tables";
+@import "components/inputs";
+@import "components/checkboxes";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $color-links;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Fonts */
+.guide-fonts {
+  margin-right: 24px;
+}
+
+.open-sans {
+  font-family: $font-text;
+}
+
+.lato {
+  font-family: $font-header;
+}
+
+.rock-salt {
+  font-family: $font-logo;
+}
+
+.light {
+  font-weight: $font-light;
+}
+
+.normal {
+  font-weight: $font-normal;
+}
+
+.semibold {
+  font-weight: $font-semibold;
+}
+
+.bold {
+  font-weight: $font-bold;
+}
+
+.header-size-big {
+  font-size: $header-big-font-size;
+}
+
+.header-size-regular {
+  font-size: $header-font-size;
+}
+
+.header-size-small {
+  font-size: $header-small-font-size;
+}
+
+.text-size {
+  font-size: $base-font-size;
+}
+
+.small-text-size {
+  font-size: $small-font-size;
+}
+
+/* Colors */
+
+.guide-colors {
+  text-align: center;
+  margin-right: 24px;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.color-text {
+  margin: 20px auto;
+}
+
+.colors-main {
+  background-color: $color-main;
+}
+
+.colors-font-light {
+  background-color: $color-light;
+}
+
+.colors-font-dark {
+  background-color: $color-dark;
+}
+
+.colors-background-light {
+  background-color: $background-color-light;
+
+}
+
+.colors-background-dark {
+  background-color: $background-color-dark;
+}
+
+.colors-hover-light {
+  background-color: $hover-color-light;
+}
+
+.colors-hover-dark {
+  background-color: $hover-color-dark;
+}
+
+.colors-warning {
+  background-color: $color-warning;
+}
+
+.colors-success {
+  background-color: $color-success;
+}
+
+.colors-links {
+  background-color: $color-links;
+}
+
+/* Components */
+
+.buttons{
+  width: 230px;
+}
+
+.tables {
+  width: 400px;
+  margin-right: 24px;
+}
+
+.inputs {
+  width: 200px;
+  margin-right: 24px;
+}
+
+.checkboxes{
+  width: 400px;
+  display: block;
+}

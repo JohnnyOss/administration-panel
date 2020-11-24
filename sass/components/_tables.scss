@@ -1,0 +1,100 @@
+.table {
+  padding: 0 20px;
+}
+
+.table-list {
+  background: $background-color-light;
+  list-style-type: none;
+  display: flex;
+  margin: 1px auto;
+  padding: 5px 15px;
+  border-bottom: 1px solid $color-dark;
+
+  &:hover {
+    background: $hover-color-light;
+    cursor: pointer;
+  }
+}
+
+.table-link {
+  text-align: left;
+
+  h3 {
+    width: 45%;
+  }
+
+  a {
+    width: 33%;
+    text-decoration: none;
+    color: $color-links;
+    margin: auto 10px;
+  }
+
+  .link-icons {
+    margin: 15px 0;
+  }
+
+  img {
+    width: 20px;
+    margin-right: 20px;
+  }
+}
+
+.table-text{
+  p {
+    margin: auto;
+  }
+}
+
+.table-value{
+  justify-content: space-between;
+}
+
+.nav-list {
+  font-family: $font-header;
+  color: $color-light;
+  background-color: $background-color-dark;
+  width: 100%;
+  padding-left: 0;
+  margin: 0 auto;
+
+  .nav-bar {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    height: 40px;
+    padding-left: 20px;
+
+    .nav-icon {
+      position: relative;
+      width: 40px;
+
+      img {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin: 10px auto;
+      }
+    }
+
+    &:hover {
+      border-left: 5px solid $color-main;
+      background: $hover-color-dark;
+      color: lighten($color-light, 20%);
+    }
+  }
+}
+
+.nav-link {
+  min-width: 150px;
+
+  a {
+    cursor: pointer;
+
+    p {
+      font-size: $base-font-size;
+      color: $color-light;
+      margin: 5px auto;
+    }
+  }
+}

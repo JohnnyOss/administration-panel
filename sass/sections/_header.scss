@@ -1,0 +1,57 @@
+.section-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $color-main;
+  z-index: 10;
+}
+
+.header {
+  background-color: $background-color-light;
+  height: 60px;
+  width: 100%;
+  justify-content: flex-end;
+  display: inline-flex;
+  text-align: center;
+
+  div {
+    padding-top: 16px;
+
+    span {
+      padding: 0 10px;
+    }
+  }
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.header-wallet,
+.header-profile {
+  width: 180px;
+  border-left: 1px solid $color-main;
+  border-right: 1px solid $color-main;
+}
+
+.header-profile {
+  font-size: $small-font-size;
+}
+
+.header-notification,
+.header-quit {
+  width: 60px;
+}
+
+.header-notification{
+  position: relative;
+
+  .notification-unread {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: $color-main;
+  }
+}

@@ -1,0 +1,51 @@
+.btn {
+  background-color: $color-main;
+  color: $color-light;
+  border-color: $color-light;
+  border-radius: $radius;
+  border-width: 1px;
+  border-style: solid;
+  transition: $transition;
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $base-font-size;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-cancel {
+  background: $color-dark;
+
+  &:hover {
+    background: darken($color-dark, 20%);
+  }
+}
+
+.btn-success {
+  background: $color-success;
+
+  &:hover {
+    background: darken($color-success, 20%);
+  }
+}
+
+.btn-warning {
+  background: $color-warning;
+
+  &:hover {
+    background: darken($color-warning, 20%);
+  }
+}
+
+.btn-add {
+  background: $color-main;
+  margin: 20px auto;
+
+  &:hover {
+    background: darken($color-main, 20%);
+  }
+}

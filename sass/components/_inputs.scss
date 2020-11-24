@@ -1,0 +1,33 @@
+input, select, textarea {
+  border: 1px solid $color-dark;
+  border-radius: $radius;
+  margin: 5px auto;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $color-dark;
+    cursor: pointer;
+  }
+
+  &.error {
+    border-color: $color-warning;
+  }
+}
+
+.input-image {
+  margin: 5px;
+  width: 100%;
+
+  img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+}
+
+.input-field {
+  padding: 10px;
+  text-align: center;
+}

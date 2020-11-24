@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Administration Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="section-header">
+    <div class="header">
+      <div class="header-wallet">
+        <a href="#"><img src="images/icons/wallet.svg" alt="wallet"></a>
+        <span>$ 1,500.00</span>
+        <a href="#"><img src="images/icons/arrow-down.svg" alt="arrow-down"></a>
+      </div>
+      <div class="header-notification">
+        <a href="#"><img src="images/icons/notification.svg" alt="notification"></a>
+        <span class="notification-unread"></span>
+      </div>
+      <div class="header-profile">
+        <img src="images/icons/profile.svg" alt="profile">
+        <a href="#"><span>Leonardo Dicaprio</span></a>
+      </div>
+      <div class="header-quit">
+        <a href="#"><img src="images/icons/quit.svg" alt="quit"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sidebar">
+    <div class="sidebar">
+
+      <div class="sidebar-header">
+        <div class="logo">
+          <p class="logo-text">Just do it</p>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="sidebar-list">
+        <ul class="nav-list">
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/general.svg" alt="general">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>General</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/details.svg" alt="details">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Details</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/links.svg" alt="links">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Links</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/banners.svg" alt="banners">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Banners</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/personaldata.svg" alt="personaldata">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Personal data</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/payout.svg" alt="payout">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Payout</p></a>
+            </div>
+          </li>
+          <li class="nav-bar">
+            <div class="nav-icon">
+              <img src="images/icons/postback.svg" alt="postabck">
+            </div>
+            <div class="nav-link">
+              <a href="#"><p>Postback</p></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-people">
+        <div class="sidebar-person">
+          <p>YOUR MANAGER</p>
+          <div class="sidebar-person-info">
+            <div class="sidebar-person-details">
+              <img src="images/head.jpg" alt="head">
+              <span class="sidebar-avilable"></span>
+              <a href=""><span>Mikhael E.</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-content">
+    <div class="content container">
+      <div class="content-header general-container">
+        <p>GENERAL STATISTIC</p>
+      </div>
+      <div class="content-elements">
+        <div class="general-calendar">
+          <div class="calendar-input">
+            <input type="date" value="2016-05-16">
+            <div class="input-line"></div>
+            <input type="date" value="2016-05-16">
+            <img src="images/icons/calendar.svg" alt="calendar">
+          </div>
+          <div class="btn btn-refresh">
+            <img src="images/icons/refresh.svg" alt="refresh">
+          </div>
+        </div>
+        <div class="general-content container-sized">
+          <div class="general-list">
+            <ul class="table">
+              <li class="table-list table-value">
+                <h3>Visitsingups</h3>
+                <p>124</p>
+              </li>
+              <li class="table-list table-value">
+                <h3>FTD</h3>
+                <p>445</p>
+              </li>
+            </ul>
+            <ul class="table">
+              <li class="table-list table-value">
+                <h3>Net deposit</h3>
+                <p>564</p>
+              </li>
+              <li class="table-list table-value">
+                <h3>Turn over</h3>
+                <p>432</p>
+              </li>
+            </ul>
+          </div>
+          <div class="general-graph-header">
+            <h3 class="graph-header">Earing chart</h3>
+            <div class="graph-options">
+              <div class="graph-span-active"><span></span>Singups</div>
+              <div class="graph-span-active"><span class="graph-ftd"></span>FTD</div>
+              <div><span class="graph-earned"></span>Earned</div>
+            </div>
+          </div>
+          <img src="/images/graph.jpg" alt="graphs">
+        </div>
+      </div>
+    </div>
+
+    <div class="content container">
+      <div class="content-header">
+        <p>LINKS</p>
+      </div>
+      <div class="content-elements container-sized">
+        <div class="btn btn-add">
+          +add new
+        </div>
+        <ul class="table">
+          <li class="table-list table-link">
+            <h3>Home Page</h3>
+            <a href="#">http://www.homepage.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Currently offer</h3>
+            <a href="#">http://www.currently.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Blurpix</h3>
+            <a href="#">http://www.blurpix.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Your site</h3>
+            <a href="#">http://www.yoursite.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Google</h3>
+            <a href="#">http://www.google.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Facebook</h3>
+            <a href="#">http://www.facebook.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Dashboard</h3>
+            <a href="#">http://www.dashboard.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Blurax</h3>
+            <a href="#">http://www.blurax.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Piece of Wine</h3>
+            <a href="#">http://www.pieceofwine.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+          <li class="table-list table-link">
+            <h3>Twitter</h3>
+            <a href="#">http://www.twitter.com</a>
+            <div class="link-icons">
+              <a href="#"><img src="images/icons/links.svg" alt="links"></a>
+              <a href="#"><img src="images/icons/trash.svg" alt="trash"></a>
+            </div>
+          </li>
+        </ul>
+        <div class="btn btn-add">
+          +add new
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
