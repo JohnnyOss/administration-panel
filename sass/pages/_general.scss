@@ -37,7 +37,7 @@
     img {
       width: 25px;
       height: 25px;
-      transition: all 0.3s;
+      transition: $transition-quick;
     }
 
     &:hover img {
@@ -105,3 +105,29 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 899px) {
+  .general-calendar {
+    .btn-refresh {
+      position: static;
+      margin: 10px auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .general-calendar {
+    .calendar-input {
+      height: auto;
+      display: block;
+
+      img {
+        display: flex;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .input-line {
+    display: none;
+  }
+}

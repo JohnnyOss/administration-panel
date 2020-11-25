@@ -88,3 +88,35 @@
   }
 }
 
+.header-in-sidebar {
+  display: none !important;
+  color: $color-dark;
+  height: 0;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+@media (max-width: 767px) {
+  .section-sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .sidebar-content {
+    transition: all 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+    &.show {
+      opacity: 1;
+      height: auto;
+    }
+  }
+
+  .header-in-sidebar {
+    display: inline-flex !important;
+    height: auto;
+  }
+}
