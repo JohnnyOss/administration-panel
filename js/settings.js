@@ -1,6 +1,9 @@
-//* global Handlebars */
+/* global Handlebars */
 
 export const select = {
+  templateOf: {
+    payoutList: '#template-payout-list',
+  },
   containerOf: {
     pages: '#pages',
   },
@@ -10,6 +13,9 @@ export const select = {
   },
   nav: {
     links: '.nav-list a',
+  },
+  content: {
+    payoutList: '.payout-list',
   },
 };
 
@@ -29,4 +35,5 @@ export const settings = {
 };
 
 export const templates = {
+  payoutList: Handlebars.compile(document.querySelector(select.templateOf.payoutList).innerHTML),
 };

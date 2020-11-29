@@ -6,8 +6,7 @@
   padding: 10px;
 }
 
-.scroll-wrapper table,
-.scroll-wrapper .table-content {
+.scroll-wrapper table {
   padding: 5px;
   width: 100%;
   max-width: 100%;
@@ -15,9 +14,47 @@
 
 //first option for table
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
 tr {
   &:hover {
     background-color: $hover-color-light;
+  }
+}
+
+.table-header {
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+th, td {
+  padding: 20px;
+  border-bottom: $border-bottom;
+}
+
+th {
+  p {
+    border-radius: $radius;
+    display: inline-flex;
+    padding: 5px;
+
+    &:hover {
+      background-color: $hover-color-light;
+    }
+  }
+
+  img {
+    opacity: 0;
+    margin-left: 5px;
+    width: 10px;
+  }
+
+  &:hover img {
+    opacity: 1;
   }
 }
 
@@ -64,6 +101,7 @@ tr {
   justify-content: space-between;
   display: flex;
   padding: 10px;
+  border-bottom: $border-bottom;
 
   p {
     display: inline-flex;

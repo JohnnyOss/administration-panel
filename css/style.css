@@ -356,7 +356,6 @@ body {
 }
 
 .container {
-  max-width: 1170px;
   margin: 18px 18px 18px 248px;
 }
 
@@ -1026,7 +1025,7 @@ input.error, select.error, textarea.error {
 .calendar {
   position: relative;
   padding: 30px;
-  border-bottom: 2px solid #c2c7d8;
+  border-bottom: 1px solid #c2c7d8;
 }
 
 .calendar .calendar-input {
@@ -1081,15 +1080,49 @@ input.error, select.error, textarea.error {
   padding: 10px;
 }
 
-.scroll-wrapper table,
-.scroll-wrapper .table-content {
+.scroll-wrapper table {
   padding: 5px;
   width: 100%;
   max-width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
 tr:hover {
   background-color: #c7ecee;
+}
+
+.table-header:hover {
+  background-color: inherit;
+}
+
+th, td {
+  padding: 20px;
+  border-bottom: 1px solid #c2c7d8;
+}
+
+th p {
+  border-radius: 4px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 5px;
+}
+
+th p:hover {
+  background-color: #c7ecee;
+}
+
+th img {
+  opacity: 0;
+  margin-left: 5px;
+  width: 10px;
+}
+
+th:hover img {
+  opacity: 1;
 }
 
 .table-pages {
@@ -1136,6 +1169,7 @@ tr:hover {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
+  border-bottom: 1px solid #c2c7d8;
 }
 
 .table-row p {
@@ -1381,7 +1415,7 @@ tr:hover {
 
 .content-header {
   padding: 5px 18px;
-  border-bottom: 2px solid #c2c7d8;
+  border-bottom: 1px solid #c2c7d8;
 }
 
 .content-elements {

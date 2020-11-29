@@ -1,7 +1,7 @@
 .calendar {
   position: relative;
   padding: 30px;
-  border-bottom: 2px solid darken($background-color-light, 15%);
+  border-bottom: $border-bottom;
 
   .calendar-input {
     height: 60px;

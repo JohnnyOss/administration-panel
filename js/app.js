@@ -1,4 +1,4 @@
-import {select, classNames} from './settings.js';
+import {select, classNames, templates} from './settings.js';
 
 const app = {
   initPages: function(){
@@ -51,6 +51,39 @@ const app = {
 
   },
 
+  payoutList: function(){
+    let generatedHTML = '';
+
+    const payoutContainer = document.querySelector(select.content.payoutList);
+    const tplPayoutList = templates.payoutList;
+
+    const payoutListData = {
+      row: {
+        'transaction-1': {
+          date: '15/08/02 (12:58)',
+          moneyValue: '34,432.00',
+          deal: 'cpl(200)',
+          account: 'bank'
+        },
+        'transaction-2': {
+          date: '16/08/02 (17:21)',
+          moneyValue: '22,456.00',
+          deal: 'cpl(200)',
+          account: 'bank'
+        },
+        'transaction-3': {
+          date: '16/08/02 (19:23)',
+          moneyValue: '73,123.00',
+          deal: 'cpl(200)',
+          account: 'bank'
+        },
+      }
+    };
+
+    generatedHTML = tplPayoutList(payoutListData);
+    payoutContainer.insertAdjacentHTML('beforeend', generatedHTML);
+  },
+
   sidebarShow: function(){
 
     function toggleMenu() {
@@ -67,6 +100,7 @@ const app = {
     const thisApp = this;
 
     thisApp.initPages();
+    thisApp.payoutList();
     thisApp.sidebarShow();
   },
 };
