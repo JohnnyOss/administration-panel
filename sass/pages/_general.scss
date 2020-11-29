@@ -1,49 +1,10 @@
-.general-calendar {
-  position: relative;
-  padding: 30px;
-  border-bottom: 2px solid darken($background-color-light, 15%);
-
-  .calendar-input {
-    height: 60px;
-    display: inline-flex;
-    border: 1px solid $color-dark;
-
-    input {
-      border: none;
-      margin: 10px;
-      background-color: $background-color-light;
-    }
-
-    .input-line {
-      border-left: 1px solid $color-dark;
-      height: 48px;
-      margin-top: 5px;
-    }
-
-    img {
-      width: 20px;
-      height: 20px;
-      margin: 20px 10px 0 10px;
-    }
+#pages {
+  > * {
+    display: none;
   }
 
-  .btn-refresh {
-    position: absolute;
-    top: 35px;
-    height: 50px;
-    width: 50px;
-    margin-left: 15px;
-
-    img {
-      width: 25px;
-      height: 25px;
-      transition: $transition-quick;
-    }
-
-    &:hover img {
-      width: 28px;
-      height: 28px;
-    }
+  > .active {
+    display: block;
   }
 }
 
@@ -58,7 +19,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  ul {
+  .list {
     min-width: 250px;
     padding: 0;
     width: 47%;
@@ -102,31 +63,12 @@
 }
 
 .general-content img {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 899px) {
-  .general-calendar {
-    .btn-refresh {
-      position: static;
-      margin: 10px auto;
-    }
-  }
+  padding: 15px;
+  margin: 0 auto 40px auto;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
-  .general-calendar {
-    .calendar-input {
-      height: auto;
-      display: block;
-
-      img {
-        display: flex;
-        margin: 10px auto;
-      }
-    }
-  }
-
   .input-line {
     display: none;
   }

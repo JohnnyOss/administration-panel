@@ -1,0 +1,37 @@
+.form-part {
+  border-bottom: 2px solid darken($background-color-light, 15%);
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    text-align: right;
+    flex: 0 0 33%;
+    margin: 10px 20px 10px 20px;
+  }
+
+  input {
+    margin: 10px;
+    flex: 0 0 25%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .field {
+    label {
+      display: block;
+      text-align: center;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+
+}

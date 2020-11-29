@@ -15,37 +15,52 @@
   font-size: $base-font-size;
   cursor: pointer;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 0 10px 5px $color-dark;
+    color: $color-dark;
+    border-color: $color-dark;
+  }
 }
 
 .btn-cancel {
   background: $color-dark;
-
-  &:hover {
-    background: darken($color-dark, 20%);
-  }
 }
 
 .btn-success {
   background: $color-success;
-
-  &:hover {
-    background: darken($color-success, 20%);
-  }
 }
 
 .btn-warning {
   background: $color-warning;
-
-  &:hover {
-    background: darken($color-warning, 20%);
-  }
 }
 
 .btn-add {
   background: $color-main;
   margin: 20px auto;
+}
 
-  &:hover {
-    background: darken($color-main, 20%);
+.btn-save {
+  background: $color-main;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.btn-refresh {
+  position: absolute;
+  top: 35px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+
+  img {
+    width: 25px;
+    height: 25px;
+    transition: $transition-quick;
+  }
+
+  &:hover img {
+    width: 28px;
+    height: 28px;
   }
 }

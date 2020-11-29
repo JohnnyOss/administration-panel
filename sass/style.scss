@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixins";
-@import "global";
 
 @import "normalize";
 @import "layout";
@@ -8,6 +7,8 @@
 @import "components/buttons";
 @import "components/checkboxes";
 @import "components/inputs";
+@import "components/lists";
+@import "components/calendar";
 @import "components/tables";
 
 @import "sections/sidebar";
@@ -15,3 +16,4 @@
 @import "sections/content";
 
 @import "pages/general";
+@import "pages/personaldata"

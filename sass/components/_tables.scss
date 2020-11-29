@@ -1,121 +1,85 @@
-.table {
-  padding: 0 20px;
-}
-
-.table-list {
-  background: $background-color-light;
-  list-style-type: none;
-  display: flex;
-  margin: 1px auto;
-  padding: 5px 15px;
-  border-bottom: 1px solid $color-dark;
-
-  &:hover {
-    background: $hover-color-light;
-    cursor: pointer;
-  }
-}
-
-.table-link {
-  text-align: left;
-  flex-wrap: wrap;
-
-  h3 {
-    flex: 0 0 45%;
-  }
-
-  a {
-    flex: 0 0 33%;
-    text-decoration: none;
-    color: $color-links;
-    margin: auto 10px;
-  }
-
-  .link-icons {
-    margin: 15px 0;
-  }
-
-  img {
-    width: 20px;
-    margin-right: 20px;
-  }
-}
-
-.table-text{
-  p {
-    margin: auto;
-  }
-}
-
-.table-value{
-  justify-content: space-between;
-}
-
-.nav-list {
-  font-family: $font-header;
-  color: $color-light;
-  background-color: $background-color-dark;
+.scroll-wrapper {
+  display: block;
   width: 100%;
-  padding-left: 0;
-  margin: 0 auto;
+  overflow-x: auto;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+}
 
-  .nav-bar {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    height: 40px;
-    padding-left: 20px;
+.scroll-wrapper table,
+.scroll-wrapper .table-content {
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
+}
 
-    .nav-icon {
-      position: relative;
-      width: 40px;
+//first option for table
 
-      img {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        margin: 10px auto;
-      }
-    }
-
-    &:hover {
-      border-left: 5px solid $color-main;
-      background: $hover-color-dark;
-      color: lighten($color-light, 20%);
-    }
+tr {
+  &:hover {
+    background-color: $hover-color-light;
   }
 }
 
-.nav-link {
-  min-width: 150px;
+.table-pages {
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .scroll-page {
+    display: inline-flex;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
 
   a {
-    cursor: pointer;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
 
-    p {
-      font-size: $base-font-size;
-      color: $color-light;
+    .table-page {
       margin: 5px auto;
     }
-  }
-}
 
-@media (max-width: 999px) {
-  .table-link {
-    .link-icons {
-      margin: 10px auto;;
+    &:hover,
+    &.active {
+      background-color: $hover-color-light;
     }
   }
 }
 
-@media (max-width: 767px) {
-  .table {
-    display: block;
-    margin: 10px auto;
+// second option for table
+
+.table-header{
+  font-weight: $font-bold;
+}
+
+.table-row {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+
+  p {
+    display: inline-flex;
+    flex: 0 0 9%;
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 5px;
   }
 
-  .table-link {
-    display: block;
-    text-align: center;
+  &:hover {
+    background-color: $hover-color-light;
+  }
+
+  &:after {
+    position: absolute;
+    top: -1px;
+    border-bottom: 2px solid darken($background-color-light, 15%);
   }
 }
