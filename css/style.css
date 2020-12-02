@@ -732,6 +732,10 @@ a {
   background: #222f3e;
 }
 
+.btn-cancel:hover {
+  color: #dff9fb;
+}
+
 .btn-success {
   background: #22923a;
 }

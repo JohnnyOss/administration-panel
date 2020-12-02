@@ -25,6 +25,10 @@
 
 .btn-cancel {
   background: $color-dark;
+
+  &:hover {
+    color: $color-light;
+  }
 }
 
 .btn-success {
