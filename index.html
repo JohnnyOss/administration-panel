@@ -23,11 +23,11 @@
         <span class="notification-unread"></span>
       </div>
       <div class="header-profile">
-        <img src="images/icons/profile.svg" alt="profile">
-        <a href="#"><span>Leonardo Dicaprio</span></a>
+        <img src="images/icons/profile.svg" class="modal-log-in" alt="profile">
+        <a href="#"><span>Pepe Dicaprio</span></a>
       </div>
       <div class="header-quit">
-        <a href="#"><img src="images/icons/quit.svg" alt="quit"></a>
+        <img src="images/icons/quit.svg" class ="modal-log-out" alt="quit">
       </div>
     </div>
   </section>
@@ -55,7 +55,7 @@
               <div class="sidebar-person-details">
                 <img src="images/head.jpg" alt="head">
                 <span class="sidebar-avilable"></span>
-                <a href=""><span>Mikhael E.</span></a>
+                <div class="modal-message"><span>Mikhael E.</span></div>
               </div>
             </div>
           </div>
@@ -72,11 +72,11 @@
             <span class="notification-unread"></span>
           </div>
           <div class="header-profile">
-            <img src="images/icons/profile.svg" alt="profile">
-            <a href="#"><span>Leonardo Dicaprio</span></a>
+            <img src="images/icons/profile.svg" class="modal-log-in" alt="profile">
+            <a href="#"><span>Pepe Dicaprio</span></a>
           </div>
-          <div class="header-quit">
-            <a href="#"><img src="images/icons/quit.svg" alt="quit"></a>
+          <div class="header-quit modal-log-out">
+            <img src="images/icons/quit.svg" alt="quit">
           </div>
         </div>
 
@@ -212,6 +212,22 @@
       </div>
     </div>
   </section>
+
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modalLogOut">
+      <h4>Modal log-out!</h4>
+      <div class="btn close-modal">Okay</div>
+    </div>
+    <div class="modal" id="modalLogIn">
+      <h4>Modal log-in!</h4>
+      <div class="btn close-modal">Okay</div>
+    </div>
+    <div class="modal" id="modalMessage">
+      <div class="btn-close close-modal">x</div>
+      <h4>Modal message</h4>
+      <div class="btn close-modal">Okay</div>
+    </div>
+  </div>
 
   <script id="template-sidebar-list" type="text/x-handlebars-template">
     <div class="nav-list">

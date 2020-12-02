@@ -73,18 +73,18 @@
 
   .sidebar-avilable {
     position: absolute;
-    left: 35px;
+    left: 25px;
     height: 13px;
     width: 13px;
     border-radius: 50%;
     background-color: $color-success;
   }
 
-  a {
-    span {
-      margin-left: 10px;
-      line-height: 3;
-    }
+
+  span {
+    margin-left: 10px;
+    line-height: 3;
+    cursor: pointer;
   }
 }
 

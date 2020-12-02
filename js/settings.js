@@ -10,6 +10,7 @@ export const select = {
   },
   containerOf: {
     pages: '#pages',
+    overlay: '#overlay',
   },
   sidebar: {
     menu: '.sidebar-menu',
@@ -25,6 +26,15 @@ export const select = {
     payoutList: '.payout-list',
     sidebarList: '.sidebar-list',
   },
+  modal: {
+    closeButton: '.close-modal',
+    overlay: 'overlay',
+    type : {
+      login: '.modal-log-in',
+      logout: '.modal-log-out',
+      message: '.modal-message',
+    }
+  },
 };
 
 export const classNames = {
@@ -36,6 +46,9 @@ export const classNames = {
   },
   pages: {
     active: 'active',
+  },
+  modal: {
+    show: 'show',
   },
 };
 

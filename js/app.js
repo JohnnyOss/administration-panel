@@ -323,12 +323,70 @@ const app = {
     });
   },
 
+  popups: function(){
+    function closeModal() {
+      document.getElementById(select.modal.overlay).classList.remove(classNames.modal.show);
+    }
+
+    document.querySelectorAll(select.modal.closeButton).forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+      });
+    });
+
+    document.querySelector(select.containerOf.overlay).addEventListener('click', function(e) {
+      if(e.target === this) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keyup', function(e) {
+      if(e.keyCode === 27) {
+        closeModal();
+      }
+    });
+
+    function openModal(modal) {
+      document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove(classNames.modal.show);
+      });
+      document.querySelector(select.containerOf.overlay).classList.add(classNames.modal.show);
+      document.querySelector(modal).classList.add(classNames.modal.show);
+    }
+
+    const loginButtons = document.querySelectorAll(select.modal.type.login);
+    for (let login of loginButtons) {
+      login.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('#modalLogIn');
+      });
+    }
+
+    const logoutButtons = document.querySelectorAll(select.modal.type.logout);
+    for (let logout of logoutButtons) {
+      logout.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('#modalLogOut');
+      });
+    }
+
+    const messageButtons = document.querySelectorAll(select.modal.type.message);
+    for (let message of messageButtons) {
+      message.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('#modalMessage');
+      });
+    }
+  },
+
   init: function(){
     const thisApp = this;
 
     thisApp.initLists();
     thisApp.initPages();
     thisApp.sidebarShow();
+    thisApp.popups();
   },
 };
 
