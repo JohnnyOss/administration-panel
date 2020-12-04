@@ -1595,44 +1595,6 @@ th:hover img {
   width: 47%;
 }
 
-.graph-options {
-  margin: 30px auto 60px auto;
-}
-
-.graph-options div {
-  padding: 10px 15px;
-  margin: 10px 20px;
-  border-radius: 4px;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex: 0 0 33%;
-      flex: 0 0 33%;
-}
-
-.graph-options div span {
-  margin: 5px 10px;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: #66b2c9;
-}
-
-.graph-options div:hover {
-  background-color: #c7ecee;
-}
-
-.graph-options .graph-span-active {
-  background-color: #c7ecee;
-}
-
-.graph-options .graph-ftd {
-  background-color: #e78326;
-}
-
-.graph-options .graph-earned {
-  background-color: #1daf35;
-}
-
 .general-content img {
   padding: 15px;
   margin: 0 auto 40px auto;

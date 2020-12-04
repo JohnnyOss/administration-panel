@@ -26,42 +26,6 @@
   }
 }
 
-.graph-options {
-  margin: 30px auto 60px auto;
-
-  div {
-    padding: 10px 15px;
-    margin: 10px 20px;
-    border-radius: $radius;
-    display: inline-flex;
-    flex: 0 0 33%;
-
-    span {
-      margin: 5px 10px;
-      height: 15px;
-      width: 15px;
-      border-radius: 50%;
-      background-color: rgb(102, 178, 201);
-    }
-
-    &:hover {
-      background-color: $hover-color-light;
-    }
-  }
-
-  .graph-span-active {
-    background-color: $hover-color-light;
-  }
-
-  .graph-ftd {
-    background-color: rgb(231, 131, 38);
-  }
-
-  .graph-earned {
-    background-color: rgb(29, 175, 53);
-  }
-}
-
 .general-content img {
   padding: 15px;
   margin: 0 auto 40px auto;
