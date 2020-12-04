@@ -214,18 +214,58 @@
   </section>
 
   <div class="overlay" id="overlay">
+
     <div class="modal" id="modalLogOut">
-      <h4>Modal log-out!</h4>
-      <div class="btn close-modal">Okay</div>
+      <div class="modal-header">
+        <p>Do you really want to Quit?</p>
+      </div>
+      <div class="modal-content">
+        <div class="btn btn-cancel close-modal">CANCEL</div>
+        <div class="btn">Quit</div>
+     </div>
     </div>
+
     <div class="modal" id="modalLogIn">
-      <h4>Modal log-in!</h4>
-      <div class="btn close-modal">Okay</div>
+      <div class="modal-header">
+        <p>LOGIN</p>
+      </div>
+      <div class="modal-content">
+        <div class="input-image">
+          <img src="images/icons/login.svg" alt="login">
+          <input class="input-field" type="text" placeholder="Login name">
+        </div>
+        <div class="input-image">
+          <img src="images/icons/password.svg" alt="key">
+          <input class="input-field" type="password" placeholder="Password">
+        </div>
+        <div class="btn btn-enter close-modal">ENTER</div>
+      </div>
     </div>
+
     <div class="modal" id="modalMessage">
-      <div class="btn-close close-modal">x</div>
-      <h4>Modal message</h4>
-      <div class="btn close-modal">Okay</div>
+      <div class="modal-header">
+        <p>ONLINE CHAT WITH YOUR PERSONAL MANAGER</p>
+        <div class="btn-close close-modal">
+          <img src="images/icons/close.svg" alt="quit">
+        </div>
+      </div>
+      <div class="modal-person">
+        <img src="images/head.jpg" alt="head">
+        <div class="modal-person-info">
+          <p>Mikhael E.</p>
+          <p>online</p>
+        </div>
+      </div>
+      <div class="modal-chat">
+
+      </div>
+      <div class="modal-chat-input">
+        <div class="input-image">
+          <img src="images/icons/message.svg" alt="message">
+          <input class="input-field input-message" type="text" placeholder="Enter the message">
+        </div>
+        <div class="btn btn-send">Send</div>
+      </div>
     </div>
   </div>
 
