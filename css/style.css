@@ -1321,6 +1321,17 @@ th:hover img {
   width: 100%;
 }
 
+#addLink,
+#addBanner {
+  text-align: center;
+}
+
+#addLink input[type="text"],
+#addBanner input[type="text"] {
+  height: 30px;
+  margin: 20px;
+}
+
 @media (max-width: 767px) {
   .modal-content {
     display: block;

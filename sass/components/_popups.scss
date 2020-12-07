@@ -119,6 +119,16 @@
   width: 100%;
 }
 
+#addLink,
+#addBanner {
+  text-align: center;
+
+  input[type="text"] {
+    height: 30px;
+    margin: 20px;
+  }
+}
+
 @media (max-width: 767px) {
   .modal-content {
     display: block;

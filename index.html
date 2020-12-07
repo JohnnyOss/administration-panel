@@ -322,6 +322,28 @@
       </div>
     </div>
 
+    <div class="modal" id="addBanner">
+      <div class="modal-header">
+        <p>Add Banner</p>
+      </div>
+      <div class="modal-content">
+        <input type="text" placeholder="Banner Name" value="name">
+        <input type="text" placeholder="Banner address" value="link">
+      </div>
+      <div class="btn">SAVE</div>
+    </div>
+
+    <div class="modal" id="addLink">
+      <div class="modal-header">
+        <p>Add Link</p>
+      </div>
+      <div class="modal-content">
+        <input type="text" placeholder="Link Name" value="name">
+        <input type="text" placeholder="Website Address" value="link">
+      </div>
+      <div class="btn">SAVE</div>
+    </div>
+
     <div class="modal" id="modalMessage">
       <div class="modal-header">
         <p>ONLINE CHAT WITH YOUR PERSONAL MANAGER</p>
@@ -371,7 +393,7 @@
       <p>LINKS</p>
     </div>
     <div class="content-elements container-sized">
-      <div class="btn btn-add">
+      <div class="btn btn-add btn-link">
         +add new
       </div>
       <div class="list">
@@ -386,7 +408,7 @@
         </div>
         {{/each}}
       </div>
-      <div class="btn btn-add">
+      <div class="btn btn-add btn-link">
         +add new
       </div>
     </div>
@@ -397,7 +419,7 @@
       <p>BANNERS</p>
     </div>
     <div class="content-elements container-sized">
-      <div class="btn btn-add">
+      <div class="btn btn-add btn-banner">
         +add new
       </div>
       <div class="list">
@@ -414,7 +436,7 @@
         {{/each}}
 
       </div>
-      <div class="btn btn-add">
+      <div class="btn btn-add btn-banner">
         +add new
       </div>
     </div>

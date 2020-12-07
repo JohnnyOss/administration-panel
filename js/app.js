@@ -409,6 +409,22 @@ const app = {
         openModal('#modalMessage');
       });
     }
+
+    const addBannerButtons = document.querySelectorAll(select.modal.button.banner);
+    for (let bannerButton of addBannerButtons) {
+      bannerButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('#addBanner');
+      });
+    }
+
+    const addLinkButtons = document.querySelectorAll(select.modal.button.link);
+    for (let linkButton of addLinkButtons) {
+      linkButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('#addLink');
+      });
+    }
   },
 
   init: function(){

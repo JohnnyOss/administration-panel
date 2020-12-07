@@ -27,6 +27,10 @@ export const select = {
     sidebarList: '.sidebar-list',
   },
   modal: {
+    button: {
+      banner: '.btn-banner',
+      link: '.btn-link',
+    },
     closeButton: '.close-modal',
     overlay: 'overlay',
     type : {
