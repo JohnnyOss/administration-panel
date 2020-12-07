@@ -203,6 +203,93 @@
 
       <div class="content container payout-list" id="payout">
       </div>
+
+      <div class="content container" id="postback">
+        <div class="content-header">
+          <p>NEW POSTBACK</p>
+        </div>
+        <div class="content-elements postback-elements">
+          <p>You can insert some parameeters is this postback:</p>
+          <div class="postback-inputs">
+            <div class="postback-areatext-box">
+              <h3>Singups</h3>
+              <textarea rows="10" placeholder="crm_userid=%user_id%"></textarea>
+            </div>
+            <div class="postback-areatext-box">
+              <h3>Deposit</h3>
+              <textarea rows="10" placeholder="crm_userid=%user_id%"></textarea>
+            </div>
+            <div class="postback-input-box">
+              <h3>Postback type</h3>
+              <select name="type">
+                <option value="" disabled selected>Select</option>
+                <option value="S2S">S2S(http:// ...)</option>
+              </select>
+            </div>
+            <div class="postback-input-box">
+              <h3>To countries</h3>
+              <select name="country">
+                <option value="" disabled selected>Select country</option>
+                <option value="Poland">Poland</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Spain">Spain</option>
+                <option value="Bolivia">Bolivia</option>
+              </select>
+            </div>
+            <div class="postback-input-box">
+              <h3>Option</h3>
+              <select name="option">
+                <option value="" disabled selected>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="postback-options">
+            <div class="postback-checkbox">
+              <p><span>NOT</span> send statues</p>
+              <div class="checkbox-group">
+                <label class="control control-checkbox">
+                  checkNumber
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+                <label class="control control-checkbox">
+                  noCall
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+                <label class="control control-checkbox">
+                  noAnswer
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+                <label class="control control-checkbox">
+                  callAgain
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+                <label class="control control-checkbox">
+                  noConfirmation
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+                <label class="control control-checkbox">
+                  noFeedback
+                  <input type="checkbox">
+                  <span class="control_indicator"></span>
+                </label>
+              </div>
+            </div>
+            <div class="postback-slider">
+              <p>Send after:</p>
+              <input type="range" min="0" max="168" value="1">
+            </div>
+          </div>
+          <div class="btn">CREATE PIXEL</div>
+        </div>
+      </div>
     </div>
   </section>
 

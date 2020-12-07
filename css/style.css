@@ -1643,4 +1643,75 @@ th:hover img {
     margin: 10px auto;
   }
 }
+
+.postback-elements {
+  text-align: left;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+
+.postback-inputs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.postback-inputs .postback-areatext-box {
+  -ms-flex: 0 0 48%;
+      flex: 0 0 48%;
+}
+
+.postback-inputs .postback-areatext-box textarea {
+  width: 100%;
+}
+
+.postback-inputs .postback-input-box {
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+}
+
+.postback-inputs .postback-input-box select {
+  width: 100%;
+}
+
+.postback-options {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px auto;
+  border: 1px solid #c2c7d8;
+  padding: 20px;
+}
+
+.postback-options .postback-checkbox {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+}
+
+.postback-options .postback-checkbox span {
+  font-weight: 700;
+  color: #da0404;
+}
+
+.postback-options .postback-slider {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+}
+
+.postback-options .postback-slider input[type="range"] {
+  width: 95%;
+}
+
+.postback-options .postback-slider input[type=range]::range-progress {
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: red;
+  border: 2px solid #1976D2;
+}
 /*# sourceMappingURL=style.css.map */

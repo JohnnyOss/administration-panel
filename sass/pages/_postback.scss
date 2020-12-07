@@ -1,0 +1,60 @@
+.postback-elements {
+  text-align: left;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+
+.postback-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .postback-areatext-box {
+    flex: 0 0 48%;
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .postback-input-box {
+    flex: 0 0 30%;
+
+    select {
+      width: 100%;
+    }
+  }
+}
+
+.postback-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  border: $border;
+  padding: 20px;
+
+  .postback-checkbox {
+    flex: 0 0 50%;
+
+    span {
+      font-weight: $font-bold;
+      color: $color-warning;
+    }
+  }
+
+  .postback-slider {
+    flex: 0 0 50%;
+
+    input[type="range"] {
+      width: 95%;
+    }
+
+    input[type=range]::range-progress {
+      height: 20px;
+      border-radius: 10px 0 0 10px;
+      background-color: red;
+      border: 2px solid #1976D2;
+    }
+  }
+}

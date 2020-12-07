@@ -33,7 +33,7 @@ tr {
 
 th, td {
   padding: 20px;
-  border-bottom: $border-bottom;
+  border-bottom: $border;
 }
 
 th {
@@ -101,7 +101,7 @@ th {
   justify-content: space-between;
   display: flex;
   padding: 10px;
-  border-bottom: $border-bottom;
+  border-bottom: $border;
 
   p {
     display: inline-flex;

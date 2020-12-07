@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  border-bottom: $border-bottom;
+  border-bottom: $border;
 
   p {
     padding: 10px;
@@ -76,7 +76,7 @@
 
 .modal-person {
   display: flex;
-  border-bottom: $border-bottom;
+  border-bottom: $border;
 
   img {
     height: 80px;
@@ -103,7 +103,7 @@
 
 .modal-chat {
   min-height: 200px;
-  border-bottom: $border-bottom;
+  border-bottom: $border;
 }
 
 .modal-chat-input {
