@@ -1,1 +1,1 @@
-# administration-panel
+https://johnnyoss.github.io/administration-panel/
